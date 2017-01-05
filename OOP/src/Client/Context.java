@@ -7,7 +7,7 @@ package Client;
  * methods only.
  */
 public class Context {
-	public static final String CONF_FILE="conf.xml";
+	public static final String CONF_FILE="src/Client/conf.xml";
 	private String username;
 	private String serverHost;
 	private String serverPort;
