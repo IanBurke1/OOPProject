@@ -6,14 +6,16 @@ package Client;
  * This is a "bean class", containing a constructor and accessor
  * methods only.
  */
+//Context Class taking from XML Encapsulation Example on Moodle
 public class Context {
+	//Storing the XML file info into a String
 	public static final String CONF_FILE="src/Client/conf.xml";
 	private String username;
 	private String serverHost;
 	private String serverPort;
 	private String download_dir;
 	
-	
+//===== GETTERS AND SETTERS ========================================================================================================================
 	
 	public String getUsername() {
 		return username;
@@ -61,8 +63,7 @@ public class Context {
 		this.download_dir = download_dir;
 	}
 
-
-
+//===toString============================================================================================================================================
 	@Override
 	public String toString() {
 		return "Context [username=" + username + ", serverHost=" + serverHost + ", serverPort=" + serverPort + ", download_dir=" + download_dir + "]";

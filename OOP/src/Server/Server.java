@@ -3,7 +3,7 @@ package Server;
 import java.io.*; //Contains classes for all kinds of I/O activity
 import java.net.*; //Contains basic networking classes
 
-
+//This class was taking from Example on Moodle
 public class Server {
 
 		private ServerSocket ss; //A server socket listens on a port number for incoming requests

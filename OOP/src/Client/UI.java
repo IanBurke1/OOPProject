@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class UI {
 	
+	/*
+	 * Method used to display the menu to the user and interact with.
+	 */
 	public void menu() {
 		int option;
+		//Scan in user input.
 		Scanner scan = new Scanner(System.in);
 		
 		do{
@@ -14,10 +18,17 @@ public class UI {
 			System.out.print("Type Option [1-4]>");
 			option = scan.nextInt();
 			if(option == 1){
-				System.out.println("Connect");
+				WebClient wc = new WebClient();
+				wc.Client();
 			}
-			else {
-				System.out.println("Error");
+			if(option == 2){
+				
+			}
+			if(option == 3){
+				
+			}
+			else if(option != 1 && option != 2 && option != 3 && option != 4) {
+				System.out.println("Please enter the correct value. (1-4)");
 			}
 		}
 		while(option != 4);

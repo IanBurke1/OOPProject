@@ -3,14 +3,20 @@ package Client;
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 
+/*
+ * This class is used to parse the XML file into the bean class (Context). It can then be "stringifyed" to the server.
+ */
 public class ContextParser {
+	//Class variable
 	private Context ctx;
 
+	//Constructor using super() to call stuff from Context
 	public ContextParser(Context ctx) {
 		super();
 		this.ctx = ctx;
 	}
-	
+	//================================================================================================================================================================================
+	//Init() method taking from XML Encapsulation Example on moodle.
 	public void init() throws Throwable{
 		//Encapsulating DOM
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -48,7 +54,7 @@ public class ContextParser {
 			}//if end
 		}//for loop end
 	}//init() end		
-
+	//Getters and Setters
 	public Context getCtx() {
 		return ctx;
 	}
